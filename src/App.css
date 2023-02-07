@@ -44,6 +44,17 @@
   cursor: pointer;
 }
 
+.search button:hover {
+  background-color: #050;
+  transition: all 0.2s linear;
+}
+
+.search button:active {
+  background-color: #020;
+  transition: all 0.2s linear;
+}
+
+
 .results-meta {
   margin: 20px 0;
 }
