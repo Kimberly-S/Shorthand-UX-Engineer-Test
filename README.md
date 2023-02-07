@@ -21,6 +21,7 @@ Once your remote repository is ready, add @ckortekaas and @nathanhoad and let us
 ----
 
 Added React Icons.
+It would be nice to have autocomplete/autosuggest for the search bar.
 
 ----
 

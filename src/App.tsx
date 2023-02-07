@@ -42,6 +42,7 @@ export default function App(): JSX.Element {
     setShows([]);
     setShow(null);
     setError("");
+
   }
 
   function onSearch(): void {
@@ -80,17 +81,30 @@ export default function App(): JSX.Element {
       });
   }
 
+  function onEnterKeySearch (e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key === 'Enter') {
+      console.log("test");
+      e.preventDefault();
+      onSearch();
+    }
+  }
+
+
+
   return (
     <div className="app">
       <h1>TV Database</h1>
       <form className="search">
         <input
+        name="form"
+          id="search input"
           autoFocus
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
+          onKeyPress={onEnterKeySearch}
           placeholder="Enter the name of a TV show..."
         />
-        <button type="button" onClick={onSearch}><FaSearch className="icon"/>Search</button>
+        <button id="search button" type="button" onClick={onSearch} ><FaSearch className="icon"/>Search</button>
       </form>
 
       {error && <div>{error}</div>}
