@@ -64,14 +64,15 @@
   margin: 20px 0;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
 .show-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.show-list #slide {
-  transition: 1s;
-  left: 0;
+  animation: fadeIn 5s; 
 }
 
 .show-preview {
