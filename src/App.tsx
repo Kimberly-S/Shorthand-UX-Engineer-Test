@@ -165,6 +165,14 @@ function ShowList({
   );
 }
 
+function formatDate (premiereDate:string) {
+  let dateString  = premiereDate;
+  let dateArray = dateString.split('-');
+  let months   = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  return (`${[dateArray[2]]}  ${months[parseInt(dateArray[1])]}  ${dateArray[0]}`);
+}
+
 function Show({
   show,
   onCancel,
@@ -186,7 +194,7 @@ function Show({
         <div className="show-details">
           <h2>{show.name}</h2>
           <div className="show-meta">
-            {show.premiered ? "Premiered " + show.premiered : "Yet to premiere"}
+            {show.premiered ? "Premiered " + `${formatDate(show.premiered)}` : "Yet to premiere"}
           </div>
           <div dangerouslySetInnerHTML={{ __html: show.summary }} />
           <h3>Cast</h3>
