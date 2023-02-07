@@ -6,7 +6,7 @@
       font-family: 'Roboto';
 }
   p, ul, li, span {
-      font-family: 'Archivo';
+      font-family: 'Open Sans';
 }
 
 .search {
@@ -69,12 +69,32 @@
   flex-wrap: wrap;
 }
 
+.show-list #slide {
+  transition: 1s;
+  left: 0;
+}
+
 .show-preview {
   max-width: 300px;
   width: 20%;
   text-align: center;
+  border-radius: 5px;
+  padding: 10px 0px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.show-preview:hover {
+  background-color: #2d3e30;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.show-preview:active {
+  background-color: #1a251c;
+  filter: brightness(50%);
+  color: white;
+  transition: all 0.2s ease;
 }
 
 .show-preview img {
@@ -83,7 +103,6 @@
 }
 
 .show-preview span {
-  color: black;
   font-weight: bold;
   display: block;
 }
