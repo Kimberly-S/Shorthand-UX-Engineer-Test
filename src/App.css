@@ -9,12 +9,9 @@
       font-family: 'Archivo';
 }
 
-
-
 .search {
   display: flex;
-  background: #999;
-  border-radius: 10px;
+  border: none;
   padding: 10px 14px;
   text-align: center;
 }
@@ -23,11 +20,14 @@
   width: 100%;
   font-size: 22px;
   line-height: 26px;
-  border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border: 2px solid darkgray;
+  border-radius: 5px;
   height: 40px;
   padding: 0 20px;
+}
+
+.search input:active {
+  border: 2px solid black;
 }
 
 .search button {
@@ -53,7 +53,6 @@
   background-color: #020;
   transition: all 0.2s linear;
 }
-
 
 .results-meta {
   margin: 20px 0;
