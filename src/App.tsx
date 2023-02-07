@@ -157,6 +157,7 @@ function ShowList({
           >
             {show.image && <img src={show.image.medium} alt="" />}
             <span>{show.name}</span>
+            <span>({show.premiered.substring(0,4)})</span>
           </div>
         );
       })}
