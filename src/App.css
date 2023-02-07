@@ -11,8 +11,8 @@
 
 .search {
   display: flex;
+  justify-content: space-evenly;
   border: none;
-  padding: 10px 14px;
   text-align: center;
 }
 
@@ -24,10 +24,17 @@
   border-radius: 5px;
   height: 40px;
   padding: 0 20px;
+  flex-grow: 4;
 }
 
 .search input:active {
   border: 2px solid black;
+}
+
+.icon {
+  color: white;
+  padding-right: 10px;
+  font-size: medium;
 }
 
 .search button {
@@ -35,12 +42,14 @@
   font-size: 22px;
   line-height: 26px;
   border-color: #050;
+  border-radius: 5px;
   background-color: #070;
   color: white;
+  margin-left: 20px;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 42px;
+  height: auto;
   cursor: pointer;
 }
 

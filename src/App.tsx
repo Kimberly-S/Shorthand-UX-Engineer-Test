@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { FaSearch } from "react-icons/fa";
 
 interface IShow {
   id: string;
@@ -89,7 +90,7 @@ export default function App(): JSX.Element {
           onChange={(e) => onQueryChange(e.target.value)}
           placeholder="Enter the name of a TV show..."
         />
-        <button type="button" onClick={onSearch}>Search</button>
+        <button type="button" onClick={onSearch}><FaSearch className="icon"/>Search</button>
       </form>
 
       {error && <div>{error}</div>}
