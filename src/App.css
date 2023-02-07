@@ -18,6 +18,13 @@ body,
       font-family: 'Open Sans';
 }
 
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+/* Components */
 .search {
   display: flex;
   justify-content: space-evenly;
@@ -71,11 +78,6 @@ body,
 
 .results-meta {
   margin: 20px 0;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  40% { opacity: 1; }
 }
 
 .show-list {
@@ -172,10 +174,14 @@ body,
 }
 
 .cast-member-image {
-  max-width: 40px;
+  max-width: 50px;
+  max-height: 50px;
   margin-right: 10px;
-}
+  border-radius: 50%;
+  overflow: hidden;
+} 
 
 .cast-member-image img {
   max-width: 100%;
+  max-height: 100%;
 }
