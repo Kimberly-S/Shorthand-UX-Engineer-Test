@@ -20,7 +20,7 @@ Once your remote repository is ready, add @ckortekaas and @nathanhoad and let us
 
 ----
 
-Used Tailwind.
+_...feel free to add any comments or thoughts in this section..._
 
 ----
 
