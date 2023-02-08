@@ -82,6 +82,7 @@ body,
 
 .results-meta {
   margin: 20px 0;
+  font-size: 24px;
 }
 
 .show-list {
@@ -299,6 +300,12 @@ body,
   }
   .html, body {
     font-size: 20px;
+  }
+  .search input {
+    height: 50px;
+  }
+  .search button {
+    padding: 5px;
   }
   .show-preview {
     flex: 1 0 50%;
