@@ -141,17 +141,30 @@ body,
 }
 
 .show-back button:before {
-  content: "≡ ";
+  content: "< ";
 }
 
 .show-image {
   flex: 0 0 auto;
   width: 350px;
   margin-right: 50px;
+  text-align: center;
 }
 
 .show-image img {
   max-width: 100%;
+}
+
+.missing-img {
+  border: dotted black 2px;
+  width: 350px;
+  height: 450px;
+}
+
+.missing-img-text {
+  position: relative;
+  top: 100px;
+  font-weight: bold;
 }
 
 .show h2 {

@@ -193,7 +193,9 @@ function Show({
       </div>
       <div className="show">
         <div className="show-image">
-          {show.image && <img src={show.image.original} alt="" />}
+          {show.image ? 
+            show.image && <img src={show.image.original} alt=""/> : 
+            <div className="missing-img"><span className="missing-img-text">Image Unavailable</span></div>}
         </div>
         <div className="show-details">
           <h2>{show.name}</h2>
