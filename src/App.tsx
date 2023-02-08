@@ -161,7 +161,7 @@ function ShowList({
           >
             {show.image ? 
               show.image && <img src={show.image.medium} alt=""/> : 
-              <div className="missing-img-med"><span className="missing-img-text">Image Unavailable</span></div>
+              <div className="missing-image-med"><span className="missing-image-text">Image Unavailable</span></div>
             }
             <span>{show.name}</span>
             <span>{show.premiered ? `(${show.premiered.substring(0,4)})` : "Yet to Premiere"}</span>
@@ -198,7 +198,7 @@ function Show({
         <div className="show-image">
           {show.image ? 
             show.image && <img src={show.image.original} alt=""/> : 
-            <div className="missing-img"><span className="missing-img-text">Image Unavailable</span></div>}
+            <div className="missing-image"><span className="missing-image-text">Image Unavailable</span></div>}
         </div>
         <div className="show-details">
           <h2>{show.name}</h2>
@@ -226,9 +226,9 @@ function Show({
 function CastMember({ member }: { member: ICastMember }): JSX.Element {
   return (
     <div className="cast-member">
-      <div className="cast-member-image">
-        {member.person.image && <img src={member.person.image.medium} alt="" />}
-      </div>
+        {member.person.image ? 
+          <div className="cast-member-image"> {member.person.image && <img src={member.person.image.medium} alt="" />} </div> :
+          <div className="missing-cast-image"><span className="missing-cast-msg">No Image</span></div>}
       <strong>{member.person.name}</strong>&nbsp;as&nbsp;
       {member.character.name}
     </div>

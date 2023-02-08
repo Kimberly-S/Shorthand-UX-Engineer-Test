@@ -156,20 +156,20 @@ body,
   max-width: 100%;
 }
 
-.missing-img {
+.missing-imag {
   border: dotted black 2px;
   width: 350px;
   height: 450px;
 }
 
-.missing-img-med {
+.missing-image-med {
   margin: 0px 10px 7px 10px;
   border: dotted black 2px;
   width: 200px;
   height: 290px;
 }
 
-.missing-img-text {
+.missing-image-text {
   position: relative;
   top: 100px;
   font-weight: bold;
@@ -209,4 +209,19 @@ body,
 .cast-member-image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.missing-cast-image {
+  width: 50px;
+  height: 50px;
+  border: 2px dotted black;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.missing-cast-msg {
+  font-size: 11px;
+  font-weight: bold;
 }
