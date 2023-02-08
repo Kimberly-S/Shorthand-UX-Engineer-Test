@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaArrowLeft } from "react-icons/fa";
 
 interface IShow {
   id: string;
@@ -192,7 +192,7 @@ function Show({
   return (
     <>
       <div className="show-back">
-        <button onClick={onCancel}>Back to list</button>
+        <button onClick={onCancel}><FaArrowLeft className="icon"/>Back to Results</button>
       </div>
       <div className="show">
         <div className="show-image">

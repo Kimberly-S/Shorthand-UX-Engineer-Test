@@ -133,16 +133,24 @@ body,
 }
 
 .show-back button {
-  background: none;
+  background: #070;
+  color: white;
   border: none;
-  padding: 0;
+  padding: 10px 12px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
   line-height: 22px;
 }
 
-.show-back button:before {
-  content: "< ";
+.show-back button:hover {
+  background-color: #050;
+  transition: all 0.2s linear;
+}
+
+.show-back button:active {
+  background-color: #020;
+  transition: all 0.2s linear;
 }
 
 .show-image {
@@ -156,7 +164,7 @@ body,
   max-width: 100%;
 }
 
-.missing-imag {
+.missing-image {
   border: dotted black 2px;
   width: 350px;
   height: 450px;
