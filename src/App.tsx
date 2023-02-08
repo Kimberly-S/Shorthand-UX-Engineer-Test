@@ -207,13 +207,16 @@ function Show({
           </div>
           <div dangerouslySetInnerHTML={{ __html: show.summary }} />
           <h3>Cast</h3>
-          <ul className="cast">
-            {cast.map((member: ICastMember) => (
-              <li key={member.character.name}>
-                <CastMember member={member} />
-              </li>
-            ))}
-          </ul>
+          {cast.length !== 0 ?
+            <ul className="cast">
+              {cast.map((member: ICastMember) => (
+                <li key={member.character.name}>
+                  <CastMember member={member} />
+                </li>
+              ))}
+            </ul> :
+            <span> Cast unavailable</span>
+          }
         </div>
       </div>
     </>
