@@ -188,6 +188,7 @@ body,
 .cast {
   list-style: none;
   padding: 0;
+  animation: fadeIn 5s; 
 }
 
 .cast-member {
