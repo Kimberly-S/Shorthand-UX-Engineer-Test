@@ -52,6 +52,10 @@ export default function App(): JSX.Element {
     setShow(null);
     setError("");
 
+    if (query === '') {
+      setError("Please enter a keyword to search for shows.");
+    }
+
     fetch(`https://api.tvmaze.com/search/shows?q=${query}`)
       .then((r: Response) => r.json())
       .then((json: Array<{ show: IShow }>) => {
@@ -107,7 +111,7 @@ export default function App(): JSX.Element {
         <button id="search button" type="button" onClick={onSearch} ><FaSearch className="icon"/>Search</button>
       </form>
 
-      {error && <div>{error}</div>}
+      {error && <div className="error-msg">{error}</div>}
 
       <div>
         <Loading isLoading={isLoading}>

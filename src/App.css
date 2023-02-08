@@ -4,6 +4,7 @@ html,
 body, 
 #background { 
   width: 100vw;
+  overflow-x: hidden;
   min-height: 100vh;
   background-color: #F5F5F5;
 }
@@ -234,12 +235,14 @@ body,
   font-weight: bold;
 }
 
+.error-msg {
+  font-size: 22px;
+  padding-top: 10px;
+}
+
 
 /* Responsive */
 @media (max-width: 1200px){
-  .body {
-    overflow-x: hidden;
-  }
   .app {
     max-width: 980px;
   }
