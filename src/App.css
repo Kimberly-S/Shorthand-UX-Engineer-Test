@@ -85,6 +85,7 @@ body,
 
 .show-list {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   animation: fadeIn 5s; 
 }
@@ -173,8 +174,7 @@ body,
 .missing-image-med {
   margin: 0px 10px 7px 10px;
   border: dotted black 2px;
-  width: 200px;
-  height: 290px;
+  height: 84%;
 }
 
 .missing-image-text {
@@ -232,4 +232,87 @@ body,
 .missing-cast-msg {
   font-size: 11px;
   font-weight: bold;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px){
+  .body {
+    overflow-x: hidden;
+  }
+  .app {
+    max-width: 980px;
+  }
+  .show-preview {
+    flex: 1 0 50%;
+    padding: 5px;
+  }
+  .missing-image-med {
+    border: dotted black 2px;
+    margin: 0px 0px 10px 50px;
+    height: 290px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1024px){
+  .app {
+    max-width: 760px;
+  }
+  .show-preview {
+    flex: 1 0 30%;
+    padding: 5px;
+  }
+  .missing-image-med {
+    border: dotted black 2px;
+    margin: 0px 0px 10px 20px;
+    height: 290px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px){
+  .app {
+    width: 100vw;
+    max-width: 480px;
+  }
+  .show-preview {
+    flex: auto;
+    width: 40%;
+    padding: 5px;
+  }
+  .show {
+    display: block;
+  }
+  .show-image {
+    padding-left: 100px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px){
+  .app {
+    max-width: 320px;
+  }
+  .html, body {
+    font-size: 20px;
+  }
+  .show-preview {
+    flex: 1 0 50%;
+    width: 40%;
+    padding: 5px;
+  }
+  .missing-image-med {
+    border: dotted black 2px;
+    margin: 0px 0px 10px 50px;
+    height: 300px;
+    width: 200px;
+  }
+  .show-image {
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+  .missing-image {
+    width: 300px;
+  }
 }
