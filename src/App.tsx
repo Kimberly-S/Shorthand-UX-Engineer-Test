@@ -136,7 +136,11 @@ function Loading({
   isLoading: boolean;
   children: React.ReactChild;
 }): JSX.Element {
-  return isLoading ? <div>Loading...</div> : <>{children}</>;
+  return isLoading ? 
+    <div className = "loading-box">
+        <span>Loading...</span>
+        <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div> : <>{children}</>;
 }
 
 function ShowList({
@@ -194,7 +198,7 @@ function Show({
         <div className="show-details">
           <h2>{show.name}</h2>
           <div className="show-meta">
-            {show.premiered ? "Premiered " + `${formatDate(show.premiered)}` : "Yet to premiere"}
+            {show.premiered ? `Premiered ${formatDate(show.premiered)}` : "Yet to premiere"}
           </div>
           <div dangerouslySetInnerHTML={{ __html: show.summary }} />
           <h3>Cast</h3>

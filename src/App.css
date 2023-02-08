@@ -1,3 +1,5 @@
+@import "animations.css";
+
 html, 
 body, 
 #background { 
@@ -18,13 +20,6 @@ body,
       font-family: 'Open Sans';
 }
 
-/* Animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  40% { opacity: 1; }
-}
-
-/* Components */
 .search {
   display: flex;
   justify-content: space-evenly;
@@ -74,6 +69,14 @@ body,
 .search button:active {
   background-color: #020;
   transition: all 0.2s linear;
+}
+
+.loading-box {
+  display: flex;
+  vertical-align: center;
+  margin-top: 33px;
+  width: auto;
+  max-width: auto;
 }
 
 .results-meta {
