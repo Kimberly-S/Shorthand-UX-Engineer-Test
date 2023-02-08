@@ -125,6 +125,7 @@ body,
 .show {
   display: flex;
   margin: 50px 0;
+  animation: fadeIn 3s;
 }
 
 .show-back {
@@ -188,7 +189,7 @@ body,
 .cast {
   list-style: none;
   padding: 0;
-  animation: fadeIn 5s; 
+  animation: fadeIn 3s; 
 }
 
 .cast-member {
