@@ -161,6 +161,13 @@ body,
   height: 450px;
 }
 
+.missing-img-med {
+  margin: 0px 10px 7px 10px;
+  border: dotted black 2px;
+  width: 200px;
+  height: 290px;
+}
+
 .missing-img-text {
   position: relative;
   top: 100px;

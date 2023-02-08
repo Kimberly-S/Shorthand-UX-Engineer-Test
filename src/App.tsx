@@ -159,7 +159,10 @@ function ShowList({
             className="show-preview"
             onClick={() => onSelectShow(show)}
           >
-            {show.image && <img src={show.image.medium} alt="" />}
+            {show.image ? 
+              show.image && <img src={show.image.medium} alt=""/> : 
+              <div className="missing-img-med"><span className="missing-img-text">Image Unavailable</span></div>
+            }
             <span>{show.name}</span>
             <span>{show.premiered ? `(${show.premiered.substring(0,4)})` : "Yet to Premiere"}</span>
           </div>
